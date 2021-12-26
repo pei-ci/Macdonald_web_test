@@ -1,12 +1,12 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://52.170.64.214/api/foodtype.php",
+  "url": "https://cors-anywhere.herokuapp.com/http://52.170.64.214/foodtype.php",
   "method": "GET",
 }
 
 $.ajax(settings).done(function (response) {
-  console.log(response[0].id);
+  console.log(response);
   $("#contain").append($("<img/>").attr("src",response[0].img ));
   $("#contain").append(response[0].name)
 });

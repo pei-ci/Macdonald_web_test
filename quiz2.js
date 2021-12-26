@@ -1,7 +1,7 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://52.170.64.214/api/foodtype.php",
+  "url": "https://cors-anywhere.herokuapp.com/http://52.170.64.214/api/foodtype.php",
   "method": "GET",
 }
 
