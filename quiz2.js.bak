@@ -12,7 +12,7 @@ $.ajax(settings).done(function (response) {
 });
 */
 $.ajax({
-        url:"http://52.170.64.214/api/foodtype_en.php",
+        "url":"http://52.170.64.214/api/foodtype_en.php",
 		"async": true,
   "crossDomain": true,
   "method": "GET",
