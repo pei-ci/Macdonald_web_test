@@ -15,7 +15,7 @@ $.post({
         },function(jsonResult){
             //let result = JSON.parse(jsonResult);
             //if(result['sucess']==='true'){
-                console.log(jsonResult[0]);
+                console.log(jsonResult[0].id);
             
         }
     );

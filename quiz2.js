@@ -10,7 +10,7 @@ $.ajax(settings).done(function (response) {
   $("#contain").append($("<img/>").attr("src",response[0].img ));
   $("#contain").append(response[0].name);
 });*/
-$.post({
+$.get({
         url:"http://52.170.64.214/api/foodtype_en.php",
         },function(jsonResult){
             //let result = JSON.parse(jsonResult);
