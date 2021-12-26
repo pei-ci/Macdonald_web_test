@@ -1,6 +1,5 @@
-var settings = {
-  "async": true,
-  "crossDomain": true,
+/*var settings = {
+  
   "url": "http://52.170.64.214/api/foodtype_en.php",
   "method": "GET",
   
@@ -10,4 +9,15 @@ $.ajax(settings).done(function (response) {
   $("#contain").append($("<img/>").attr("src",response[0].img ));
   $("#contain").append(response[0].name);
 });
-
+*/
+$.get({
+        url:"http://52.170.64.214/api/foodtype_en.php",
+		"async": true,
+  "crossDomain": true,
+        },function(jsonResult){
+            //let result = JSON.parse(jsonResult);
+            //if(result['sucess']==='true'){
+                console.log(jsonResult[0].id);
+            
+        }
+    );
