@@ -16,7 +16,7 @@ $.post({
             //let result = JSON.parse(jsonResult);
             //if(result['sucess']==='true'){
                 console.log(jsonResult[0].id);
-				$("#contain").append($("<img/>").attr("src",response[0].img ));
-				$("#contain").append(response[0].name);
+				$("#contain").append($("<img/>").attr("src",jsonResult[0].img ));
+				$("#contain").append(jsonResult[0].name);
         }
     );

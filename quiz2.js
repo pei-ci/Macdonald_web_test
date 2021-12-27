@@ -11,7 +11,7 @@ $.ajax(settings).done(function (response) {
   $("#contain").append(response[0].name);
 });*/
 $.post({
-        url:"http://52.170.64.214/api/foodtype_en.php",
+        url:"https://pei-ci.github.io/Madonald2/quiz2.html",
         },function(jsonResult){
             //let result = JSON.parse(jsonResult);
             //if(result['sucess']==='true'){
