@@ -1,7 +1,7 @@
 /*var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://52.170.64.214/api/foodtype_en.php",
+  "url": "https://macdonald.eastus.cloudapp.azure.com/api/foodtype.php",
   "method": "GET",
   
 }
@@ -16,6 +16,7 @@ $.post({
             //let result = JSON.parse(jsonResult);
             //if(result['sucess']==='true'){
                 console.log(jsonResult[0].id);
-            
+				$("#contain").append($("<img/>").attr("src",jsonResult[0].img ));
+				$("#contain").append(jsonResult[0].name);
         }
     );
